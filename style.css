@@ -1,0 +1,126 @@
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 600px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.product-card-container img {
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.product-desc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.product-category {
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.product-desc-container h1 {
+    color: var(--black);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.product-desc-container p {
+    color: var(--grey);
+    line-height: 1.75;
+}
+
+.product-prices-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sale-price {
+    color: var(--green-500);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.list-price {
+    color: var(--grey);
+    text-decoration: line-through;
+}
+
+.product-desc-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 0;
+    background-color: var(--green-500);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 300ms;
+}
+
+.product-desc-container button:hover {
+    background-color: var(--green-700);
+}
+
+@media only screen and (max-width: 650px) {
+    .product-card-container {
+        flex-direction: column;
+        width: 400px;
+    }
+    .product-card-container img  {
+        border-radius: 10px 10px 0 0;
+    }
+    .product-desc-container p {
+        font-size: 16px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
