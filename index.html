@@ -5,25 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+
+  <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Product preview card component</title>
+  <title>Product preview card component</title>
 </head>
 
 <body>
   <main>
-    <div class="product-card-container">
+    <article class="product-card-container">
       <img srcset="images/image-product-desktop.jpg 600w, images/image-product-mobile.jpg 686w"
-        sizes="(max-width: 600px) 686px, 300px" src="images/image-product-desktop.jpg" alt="A bottle of perfume">
+        sizes="(max-width: 640px) 686px, 300px" src="images/image-product-desktop.jpg" alt="A bottle of perfume">
 
       <div class="product-desc-container">
         <span class="product-category">Perfume</span>
@@ -37,7 +36,7 @@
         </div>
         <button><img src="images/icon-cart.svg" alt="Shopping cart">Add to Cart</button>
       </div>
-    </div>
+    </article>
   </main>
 </body>
 
